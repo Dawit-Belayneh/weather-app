@@ -1,4 +1,4 @@
-const apiKey = "";
+const apiKey = '';
 const searchBtn = document.getElementById("search-btn");
 const cityInput = document.getElementById("city-input");
 const weatherInfo = document.getElementById("weather-info");
@@ -17,7 +17,7 @@ searchBtn.addEventListener("click", () => {
 });
 
 async function getWeather(city) {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     try {
         const response = await fetch(url);
